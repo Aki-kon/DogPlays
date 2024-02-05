@@ -21,6 +21,8 @@ h1 {
   padding: 30px 10px;
   margin: 10px;
   font-family: "Times New Roman", Times, serif;
+  color: #001e1d;
+  font-weight: bold;
 }
 .seccion-descripcion {
   font-size: 1.2rem;
@@ -28,6 +30,7 @@ h1 {
 }
 .seccion-texto {
   font-size: 1.2rem;
+  color: #0f3433;
 }
 
 .texto-negro {
@@ -40,12 +43,12 @@ h1 {
 /* Barra de navegacion */
 
 .navbar {
-  padding: 2rem;
-  background-color: antiquewhite;
+  padding: 0.5rem;
+  background-color: #abd1c6;
 }
 .navbar-collapse {
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
 }
 /* Adptable (responsivo) */
 @media screen and (max-width: 767px) {
@@ -69,9 +72,10 @@ h1 {
 /* Seccion principal */
 
 .hero {
-  background-color: antiquewhite;
-  min-height: 450px;
+  background: #004643;
+  min-height: 500px;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .hero-principal {
@@ -79,7 +83,25 @@ h1 {
   font-family: "Rubik Doodle Shadow", system-ui;
   color: black;
 }
-
+#hero-title {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+#hero-side-title {
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+  color: #abd1c6;
+}
+#btn-hero {
+  background-color: #f9bc60;
+}
+#btn-hero a {
+  color: #001e1d;
+}
+#btn-hero:hover {
+  background-color: white;
+}
 .img-logo-principal {
   width: 200px;
   height: 200px;
@@ -93,26 +115,29 @@ h1 {
   color: #615151;
 }
 
-.hero-inferior-imagen {
-  width: 600px;
-  height: 400px;
+.inferior-imagen {
+  width: 90%;
+  height: 800px;
+  padding: 50px;
+  border-radius: 9%;
 }
 
 /* Inicio - seccion*/
 
 .inicio {
-  height: 300px;
-  padding: 10px;
+  height: 500px;
+  background-color: #c3f0ca;
 }
 
 .inicio .contenedor {
-  max-width: 800px;
+  max-width: 900px;
   text-align: center;
 }
 
 /* Actividades - seccion */
 .actividades {
   padding: 40px 40px 60px 40px;
+  background-color: #004643;
 }
 .actividades .columna {
   padding: 20px;
@@ -124,18 +149,20 @@ h1 {
   transition: all 0.2s ease-in;
 }
 .actividades .columna:hover {
-  color: white;
-  background-color: rgb(207, 77, 166);
+  background-color: #e8e4e6;
+  color: #0f3433;
 }
 .actividades-titulo {
   font: 25px;
   font-weight: bold;
   margin: 10px 0;
 }
-
+.act-card-paragraph {
+  color: black;
+}
 .actividades i {
   font-size: 2.5rem;
-  color: chartreuse;
+  color: #f9bc60;
   background-color: black;
   padding: 8px 19px;
   border-radius: 50%;
@@ -154,6 +181,7 @@ h1 {
 
 .testimonios-clientes {
   padding: 40px;
+  background-color: #c3f0ca;
 }
 
 .testimonios-clientes img {
@@ -206,6 +234,9 @@ h1 {
 
 /* Contacto */
 
+.contacto {
+  background-color: #e16162;
+}
 .contacto .container {
   max-width: 1100px;
   min-height: 200px;
@@ -214,15 +245,16 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: #004643;
   border-radius: 10px;
-  box-shadow: 0px 1px 4px 1px white;
+  box-shadow: 0px 1px 4px 1px #0f3433;
 }
 
 .contacto .row {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .contacto .descripcion {
@@ -259,6 +291,7 @@ h1 {
 
 footer {
   min-height: 500px;
+  background-color: #004643;
 }
 
 .footer-logo {
@@ -273,6 +306,7 @@ footer {
   font-weight: bold;
   padding: 20px;
   margin-bottom: 30px;
+  color: #abd1c6;
 }
 
 .iconos-redes-sociales a {
@@ -281,15 +315,15 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
-  margin: 10px;
+  padding: 35px;
+  margin: 10px 30px;
   border: 1px solid black;
   border-radius: 50%;
   transition: all 0.2s ease-in;
 }
 
 .iconos-redes-sociales i {
-  color: blue;
+  color: #e16162;
   font-size: 1.8rem;
   transition: all 0.2s ease-in;
 }
@@ -305,6 +339,6 @@ footer {
 
 .derechos-de-autor {
   font-size: 15px;
-  color: black;
+  color: #f9bc60;
   padding: 20px;
 }

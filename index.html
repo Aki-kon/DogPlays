@@ -53,16 +53,16 @@
           /></a>
           <ul class="navbar-nav d-flex justify-content align-items-center">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#hero">Inicio</a>
+              <a class="nav-link" aria-current="page" href="#Inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Actividades</a>
+              <a class="nav-link" href="#Actividades">Actividades</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonios</a>
+              <a class="nav-link" href="#Testimonios">Testimonios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Contacto</a>
+              <a class="nav-link" href="#Contacto"> Contacto</a>
             </li>
           </ul>
         </div>
@@ -71,54 +71,72 @@
     <!-- seccion principal-->
     <section class="hero align-items-stretch">
       <div
-        class="hero-principal d-flex flex-column justify-content-center align-items-center"
+        class="hero-principal d-flex flex-row justify-content-center align-items-center"
       >
-        <img
+        <!-- <img
           class="img-logo-principal"
           src="/IMG/dog-svgrepo-com.svg"
           alt="Logo-principal"
-        />
-        <h1>Bienvenidos a DogsPlay</h1>
-        <h2>
-          Un santuario para tus mascotas donde se pueden sentir tranquilos.
-        </h2>
+        /> -->
+        <div class="container-fluid">
+          <h1 id="hero-title">Bienvenidos a DogsPlays</h1>
+        </div>
+        <div class="container-fluid">
+          <h2 id="hero-side-title">
+            Un santuario para tus mascotas donde se pueden sentir tranquilos.
+          </h2>
+          <button id="btn-hero" type="button" class="btn btn-primary btn-lg">
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              style="text-decoration: none"
+              >Contacto</a
+            >
+          </button>
+        </div>
       </div>
       <div class="hero-inferior">
         <img
-          class="hero-inferior-imagen img-fluid"
-          src="/IMG/dog-care.svg"
+          class="inferior-imagen"
+          src="/IMG/anthony-duran-XFLY0Yp3Gow-unsplash.jpg"
           alt=""
         />
       </div>
     </section>
     <!-- Inicio -->
-    <section class="inicio seccion-verde">
+    <section id="Inicio" class="inicio">
       <div class="contenedor">
         <h2 class="seccion-titulo">Un poco sobre nosotros</h2>
         <p class="seccion-texto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          pariatur aspernatur inventore deleniti quae beatae id, obcaecati
-          dolore, soluta neque nesciunt dignissimos doloribus ullam ab enim
-          nostrum omnis. Id, quae! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Rem, cupiditate maiores temporibus doloribus vel
-          unde expedita. Nemo architecto officia laudantium eaque harum. Est
-          quas iure deleniti recusandae maxime repellat autem.
+          Bienvenido a nuestro exclusivo hotel para perros, donde brindamos un
+          ambiente seguro, cómodo y divertido para consentir a tus mascotas de
+          cuatro patas. En nuestro encantador establecimiento, nos esforzamos
+          por ofrecer un servicio excepcional para asegurarnos de que cada
+          huésped canino se sienta como en casa.
+        </p>
+        <p class="seccion-texto">
+          Ya sea que estés planeando unas vacaciones, un viaje de negocios o
+          simplemente necesites un lugar seguro y divertido para que tu perro se
+          quede mientras estás fuera, nuestro hotel para perros es la elección
+          perfecta. Ven y descubre un refugio donde el amor por los animales se
+          combina con la comodidad y la diversión, proporcionando a tu mejor
+          amigo una experiencia excepcionalmente agradable durante su estancia.
         </p>
       </div>
     </section>
     <!-- Actividades -->
-    <section class="actividades seccion-clara">
+    <section id="Actividades" class="actividades">
       <div class="container text-center">
         <div class="row">
           <!-- Guarderia -->
           <div class="columna col-12 col-md-4">
             <i class="bi bi-house-heart-fill"></i>
             <p class="actividades-titulo">Guarderia</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              modi maxime facilis magni, accusamus hic nisi, porro aliquam
-              libero repellendus commodi molestiae repudiandae, tempora natus
-              explicabo possimus reprehenderit blanditiis consequuntur!
+            <p class="act-card-paragraph">
+              En nuestra guardería, ofrecemos un servicio excepcional diseñado
+              para atender las necesidades individuales de cada perro. Nos
+              encargamos de asegurar que tu mascota disfrute de un ambiente
+              seguro, divertido y social mientras estás ocupado.
             </p>
             <div class="badges-contenedor">
               <span class="badge text-bg-primary">Seguridad</span>
@@ -130,11 +148,10 @@
           <div class="columna col-12 col-md-4">
             <i class="bi bi-person-walking"></i>
             <p class="actividades-titulo">Paseos</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              modi maxime facilis magni, accusamus hic nisi, porro aliquam
-              libero repellendus commodi molestiae repudiandae, tempora natus
-              explicabo possimus reprehenderit blanditiis consequuntur!
+            <p class="act-card-paragraph">
+              ¡Descubre la experiencia única en nuestra exclusiva guardería de
+              perros, ahora con paseos personalizados que harán que la cola de
+              tu amigo peludo no deje de moverse de felicidad!
             </p>
             <div class="badges-contenedor">
               <span class="badge text-bg-primary">Cuidado</span>
@@ -146,11 +163,12 @@
           <div class="columna col-12 col-md-4">
             <i class="bi bi-stars"></i>
             <p class="actividades-titulo">Baños</p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              modi maxime facilis magni, accusamus hic nisi, porro aliquam
-              libero repellendus commodi molestiae repudiandae, tempora natus
-              explicabo possimus reprehenderit blanditiis consequuntur!
+            <p class="act-card-paragraph">
+              En nuestra guardería, no solo mimamos a tu perro, sino que también
+              lo dejamos impecable. ¡Contáctanos ahora y descubre cómo podemos
+              convertir la estadía de tu mascota en una experiencia completa de
+              bienestar y belleza! Tu confianza y la felicidad de tu perro son
+              nuestra mayor satisfacción.
             </p>
             <div class="badges-contenedor">
               <span class="badge text-bg-primary">Cuidado</span>
@@ -162,7 +180,7 @@
       </div>
     </section>
     <!-- Seccion de Testimonios -->
-    <section class="testimonios-clientes seccion-clara d-flex flex-column">
+    <section id="Testimonios" class="testimonios-clientes d-flex flex-column">
       <h2 class="seccion-titulo texto-negro">TESTIMONIOS</h2>
       <h3 class="seccion-descripcion">
         Estos son algunos de los comentarios de nuestros clientes
@@ -246,13 +264,15 @@
       </div>
     </section>
     <!-- Contacto -->
-    <section class="contacto seccion-verde">
+    <section id="Contacto" class="contacto">
       <div class="container">
         <div
           class="container text-center rectangulo d-flex justify-content-evenly"
         >
           <div class="row">
-            <div class="col-12 col-md-4 seccion-titulo">Hablemos</div>
+            <div class="col-12 col-md-4 seccion-titulo" style="color: #fffffe">
+              Hablemos
+            </div>
             <div class="col-12 col-md-4 descripcion">
               Llamanos para agendar una reservacion para que tu mascota este
               totalmente comoda
@@ -269,7 +289,7 @@
     </section>
     <!-- Pie de pagina -->
     <footer
-      class="seccion-clara d-flex flex-column align-items-center justify-content-center"
+      class="d-flex flex-column align-items-center justify-content-center"
     >
       <img class="footer-logo" src="/IMG/dogIcon.png" alt="Logo" />
       <p class="footer-texto text-center">
